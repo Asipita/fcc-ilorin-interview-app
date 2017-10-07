@@ -1,0 +1,14 @@
+<div class="card paper">
+   <h3 class="flow-text">{{welcomeMessage}}</h3>
+   <small class="flow-text">{{secondMessage}}</small>
+   <form id="startPageForm" action="/start" method="POST">
+         <input id="firstName" name="firstName" type="text" required>
+         <label for="firstName">Your first name</label>
+
+         <input id="surname" type="text" name="surname" required>
+         <label for="surname">Your surname</label>
+         <br>
+         <input type="submit" id="showNextQuestion" value="submit" class="btn" >
+
+   </form>
+</div>

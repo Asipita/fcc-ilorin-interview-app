@@ -1,0 +1,24 @@
+<div class="card paper">
+   <div><span id="qno">{{questionNumber}}</span><span class="questionBox">{{question}}</span></div>
+   <div class="rightOrWrong"></div>
+   <form action="/start" method="POST">
+      <p>
+         <input type="radio" name="option" id="option1" required="required" value={{option1}}>
+         <label for="option1">{{option1}}</label>
+      </p>
+      <p>
+         <input type="radio" name="option" id="option2" required="required" value="{{option2}}">
+         <label for="option2">{{option2}}</label>
+      </p>
+      <p>
+         <input type="radio" name="option" id="option3" required="required" {{option3}}>
+         <label for="option3">{{option3}}</label>
+      </p>
+      <p>
+         <input type="radio" name="option" id="option4" required="required" {{option4}}>
+         <label for="option4">{{option4}}</label>
+      </p>
+      <p class="hide">{{rightAnswer}}</p>
+      <button type="submit" id="showNextQuestion" class="btn">submit</button>
+   </form>
+</div>

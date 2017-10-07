@@ -1,0 +1,34 @@
+.paper {
+  color: #555;
+  width: 70%;
+  padding: 2rem;
+  padding-bottom: 1rem;
+  margin: 3rem auto; }
+  .paper #qno {
+    margin-right: 2rem;
+    font-weight: 900;
+    color: teal; }
+  .paper .questionBox {
+    font-size: 2.3rem;
+    color: #222;
+    font-weight: 900; }
+  .paper h3 {
+    font-size: 2.3rem;
+    font-weight: bold; }
+  .paper small {
+    font-size: 1rem;
+    font-weight: bold; }
+  .paper form {
+    padding-top: 2rem; }
+    .paper form input {
+      margin-top: 2rem;
+      margin-bottom: 2rem; }
+    .paper form [type="submit"] {
+      margin-top: 3rem; }
+
+.progress,
+.progress + p {
+  width: 70%;
+  margin: 2rem auto; }
+
+/*# sourceMappingURL=styles.css.map */
