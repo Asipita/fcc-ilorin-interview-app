@@ -3,7 +3,8 @@
   width: 70%;
   padding: 2rem;
   padding-bottom: 1rem;
-  margin: 3rem auto; }
+  margin: 3rem auto;
+  box-shadow: 1rem 1rem 1rem rgba(47, 103, 103, 0.86), -1rem 0rem 1rem rgba(47, 103, 103, 0.86); }
   .paper #qno {
     margin-right: 2rem;
     font-weight: 900;
@@ -30,5 +31,11 @@
 .progress + p {
   width: 70%;
   margin: 2rem auto; }
+
+nav {
+  background-color: transparent; }
+
+body {
+  background-color: cadetblue; }
 
 /*# sourceMappingURL=styles.css.map */

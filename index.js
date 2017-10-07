@@ -17,16 +17,25 @@ hbs.registerPartials(__dirname + '/views/partials')
 app.set('view engine', 'hbs')
 
 app.get('/', (req, res) => {
+    i = 0;
     res.render('index.hbs', {
         welcomeMessage: "Welcome to our online screening avenue",
-        secondMessage: "Please fill in your credentials and click next to continue"
+        secondMessage: "Please fill in your credentials and click next to continue",
+
 
     });
 });
 
 let i = 0;
+// let j = 0;
+let arrayy = []
 
 let arr = []
+
+app.post('/scorer', (req, res) => {
+    arrayy.push("1")
+})
+
 app.post('/start', (req, res) => {
     let { firstName, surname } = req.body;
     arr.push(firstName)
@@ -35,8 +44,10 @@ app.post('/start', (req, res) => {
     if (i === 10) {
         res.render('final.hbs', {
             surname: arr[1],
-            firstName: arr[0]
+            firstName: arr[0],
+            arrayy: (arrayy.length - 1) * 10
         })
+        i = 0;
     } else {
         res.render('questionPages.hbs', {
             i,
@@ -57,8 +68,15 @@ app.post('/start', (req, res) => {
 })
 
 
-hbs.registerHelper('progressSection', (numb) => {
 
+
+
+hbs.registerHelper('passOrFail', (numb) => {
+    if (numb > 50) {
+        return 'pass'
+    } else {
+        return 'fail'
+    }
 })
 
 app.listen(4005, () => console.log(`app running on port 4005`))
