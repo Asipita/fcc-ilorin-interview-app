@@ -7,9 +7,13 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node index.js"
     },
+    "engines": {
+        "node": "8.5.0"
+    },
     "author": "Shuaib Abdulghaffar",
     "dependencies": {
-        "express": "^4.17.4",
+        "body-parser": "^1.18.2",
+        "express": "^4.16.1",
         "hbs": "^4.0.1"
     },
     "license": "ISC"
