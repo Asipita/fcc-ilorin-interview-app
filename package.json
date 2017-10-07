@@ -1,15 +1,16 @@
 {
-  "name": "quiz-app",
-  "version": "1.0.0",
-  "description": "an interview app to ask interviewees questions",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Shuaib Abdulghaffar",
+    "name": "quiz-app",
+    "version": "1.0.0",
+    "description": "an interview app to ask interviewees questions",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "author": "Shuaib Abdulghaffar",
     "dependencies": {
-    "express": "^4.17.4",
-    "hbs": "^4.0.1"
-  },
-  "license": "ISC"
+        "express": "^4.17.4",
+        "hbs": "^4.0.1"
+    },
+    "license": "ISC"
 }

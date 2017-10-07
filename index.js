@@ -5,6 +5,8 @@ const { questions } = require('./views/js/questions')
 
 // console.log(questions)
 
+const port = process.env.PORT || 4005
+
 var app = express();
 
 app.use(express.static(__dirname + '/views'))
@@ -79,4 +81,4 @@ hbs.registerHelper('passOrFail', (numb) => {
     }
 })
 
-app.listen(4005, () => console.log(`app running on port 4005`))
+app.listen(port || 4005, () => console.log(`app running on port ${port}`))
